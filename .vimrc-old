@@ -1,0 +1,63 @@
+call plug#begin('~/.vim/plugged')
+"Appearance
+Plug 'vim-airline/vim-airline'
+Plug 'morhetz/gruvbox'
+
+"Explorer
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
+Plug 'junegunn/fzf.vim'
+
+"Utilities
+Plug 'prettier/vim-prettier'
+Plug 'dense-analysis/ale'
+Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+Plug 'kshenoy/vim-signature'
+Plug 'docunext/closetag.vim'
+
+"Typing assist
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+
+"Git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+"Completion
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+
+call plug#end()
+
+"---------------- Appearance
+
+set number relativenumber
+autocmd vimenter * ++nested colorscheme gruvbox
+let g:airline_powerline_fonts = 1
+syntax on
+set re=0
+
+"---------------- Explorer
+
+"FZF files ignore
+let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
+
+"CHADtree mappings
+nnoremap <leader>v <cmd>CHADopen<cr>
+
+"---------------- Utilities
+
+"Closing html tags
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.tsx,*.jsx'
+
+"Prettier
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html,*.svg PrettierAsync
+
+"---------------- Typing assist
+
+inoremap jj <Esc>
+
+"---------------- Git
+
+"---------------- Completion

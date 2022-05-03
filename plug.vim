@@ -29,4 +29,9 @@ Plug 'tpope/vim-repeat'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
+"NeoVim
+if has("nvim")
+  Plug 'neovim/nvim-lspconfig'
+endif
+
 call plug#end()

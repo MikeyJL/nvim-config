@@ -32,6 +32,7 @@ Plug 'tpope/vim-fugitive'
 "NeoVim
 if has("nvim")
   Plug 'neovim/nvim-lspconfig'
+  Plug 'glepnir/lspsaga.nvim'
 endif
 
 call plug#end()

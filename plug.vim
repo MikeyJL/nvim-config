@@ -9,13 +9,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
 
 "Explorer
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim'
 
 "Utilities
-Plug 'prettier/vim-prettier'
-Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kshenoy/vim-signature'

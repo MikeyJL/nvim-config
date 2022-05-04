@@ -21,6 +21,3 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
-
-"Use gruvbox theme
-autocmd vimenter * ++nested colorscheme gruvbox

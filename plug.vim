@@ -6,7 +6,7 @@ call plug#begin()
 
 "Appearance
 Plug 'vim-airline/vim-airline'
-Plug 'morhetz/gruvbox'
+Plug 'andersevenrud/nordic.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
 "Explorer

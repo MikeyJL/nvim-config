@@ -23,6 +23,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'kshenoy/vim-signature'
 Plug 'docunext/closetag.vim'
 
+"Completion
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+
 "Typing assist
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'

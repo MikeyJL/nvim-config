@@ -21,3 +21,5 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
+
+colorscheme nord

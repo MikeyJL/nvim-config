@@ -6,7 +6,7 @@ call plug#begin()
 
 "Appearance
 Plug 'vim-airline/vim-airline'
-Plug 'andersevenrud/nordic.nvim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'kyazdani42/nvim-web-devicons'
 
 "Explorer
@@ -15,7 +15,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-
+Plug 'preservim/nerdtree'
 
 "Utilities
 Plug 'sheerun/vim-polyglot'

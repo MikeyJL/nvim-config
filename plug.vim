@@ -10,7 +10,6 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
-
 "Explorer
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim'
@@ -20,6 +19,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'preservim/nerdtree'
 
 "Utilities
+Plug 'mhinz/vim-startify'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kshenoy/vim-signature'

@@ -7,10 +7,15 @@ call plug#begin()
 "Appearance
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
+Plug 'kyazdani42/nvim-web-devicons'
 
 "Explorer
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
 
 "Utilities
 Plug 'sheerun/vim-polyglot'

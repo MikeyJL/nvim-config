@@ -8,6 +8,8 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'arcticicestudio/nord-vim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
+
 
 "Explorer
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}

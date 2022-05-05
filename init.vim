@@ -3,11 +3,13 @@ set number relativenumber
 "Mappings
 inoremap jj <Esc>
 
+"-------------------------------------------------------
 "Imports
 "-------------------------------------------------------
 
 runtime ./plug.vim
 
+"-------------------------------------------------------
 "Appearance
 "-------------------------------------------------------
 
@@ -23,3 +25,21 @@ if (empty($TMUX))
 endif
 
 colorscheme nord
+
+
+"-------------------------------------------------------
+"Explorer
+"-------------------------------------------------------
+
+"Use nord theme for CHADtree
+let g:chadtree_settings = { 'theme.text_colour_set': 'nord' }
+
+"Mapping
+nnoremap <leader>v <cmd>CHADopen<cr>
+
+"-------------------------------------------------------
+"Completion
+"-------------------------------------------------------
+
+"Starts COQ on open
+let g:coq_settings = { 'auto_start': 'shut-up' }

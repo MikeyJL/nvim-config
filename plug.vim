@@ -17,7 +17,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 
 "Utilities
-Plug 'mhinz/vim-startify'
+Plug 'glepnir/dashboard-nvim'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kshenoy/vim-signature'

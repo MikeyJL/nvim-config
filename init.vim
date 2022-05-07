@@ -38,6 +38,12 @@ let g:chadtree_settings = { 'theme.text_colour_set': 'nord' }
 nnoremap <leader>v <cmd>CHADopen<cr>
 
 "-------------------------------------------------------
+"Dashboard
+"-------------------------------------------------------
+
+let g:dashboard_default_executive = "telescope"
+
+"-------------------------------------------------------
 "Completion
 "-------------------------------------------------------
 

@@ -22,6 +22,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kshenoy/vim-signature'
 Plug 'docunext/closetag.vim'
+Plug 'akinsho/toggleterm.nvim'
 
 "Completion
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
@@ -34,10 +35,8 @@ Plug 'tpope/vim-repeat'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-"NeoVim
-if has("nvim")
-  Plug 'neovim/nvim-lspconfig'
-  Plug 'ray-x/lsp_signature.nvim'
-endif
+"LSP
+Plug 'neovim/nvim-lspconfig'
+Plug 'ray-x/lsp_signature.nvim'
 
 call plug#end()

@@ -27,6 +27,7 @@ Plug 'rrethy/vim-illuminate'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+Plug 'pwntester/octo.nvim'
 
 "Git
 Plug 'airblade/vim-gitgutter'

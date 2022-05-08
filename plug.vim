@@ -28,6 +28,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'pwntester/octo.nvim'
+Plug 'ggandor/lightspeed.nvim'
 
 "Git
 Plug 'airblade/vim-gitgutter'

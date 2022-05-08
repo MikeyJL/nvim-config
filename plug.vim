@@ -29,6 +29,7 @@ Plug 'tpope/vim-repeat'
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'pwntester/octo.nvim'
 Plug 'ggandor/lightspeed.nvim'
+Plug 'numToStr/Comment.nvim'
 
 "Git
 Plug 'airblade/vim-gitgutter'

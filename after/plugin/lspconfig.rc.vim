@@ -20,4 +20,5 @@ lspconfig.tsserver.setup {
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" }
 }
 lspconfig.pyright.setup{}
+lspconfig.graphql.setup{}
 EOL

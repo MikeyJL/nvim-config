@@ -23,13 +23,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'kshenoy/vim-signature'
 Plug 'docunext/closetag.vim'
 Plug 'akinsho/toggleterm.nvim'
-
-"Completion
-Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
-
-"Typing assist
+Plug 'rrethy/vim-illuminate'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 
 "Git
 Plug 'airblade/vim-gitgutter'

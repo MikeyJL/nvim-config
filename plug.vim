@@ -38,5 +38,6 @@ Plug 'tpope/vim-fugitive'
 "LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'ray-x/lsp_signature.nvim'
+Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 
 call plug#end()

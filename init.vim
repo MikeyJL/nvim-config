@@ -49,3 +49,10 @@ let g:dashboard_default_executive = "telescope"
 
 "Starts COQ on open
 let g:coq_settings = { 'auto_start': 'shut-up' }
+
+"-------------------------------------------------------
+"Formatting
+"-------------------------------------------------------
+
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0

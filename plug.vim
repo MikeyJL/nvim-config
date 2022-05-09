@@ -30,6 +30,7 @@ Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'pwntester/octo.nvim'
 Plug 'ggandor/lightspeed.nvim'
 Plug 'numToStr/Comment.nvim'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 "Git
 Plug 'airblade/vim-gitgutter'

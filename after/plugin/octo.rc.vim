@@ -1,3 +1,5 @@
 lua << EOL
-require"octo".setup()
+require("octo").setup({
+  default_remote = {"upstream", "origin"};
+})
 EOL

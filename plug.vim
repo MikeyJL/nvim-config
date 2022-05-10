@@ -31,6 +31,7 @@ Plug 'pwntester/octo.nvim'
 Plug 'ggandor/lightspeed.nvim'
 Plug 'numToStr/Comment.nvim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+Plug 'pechorin/any-jump.vim'
 
 "Git
 Plug 'airblade/vim-gitgutter'

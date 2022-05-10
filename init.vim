@@ -1,4 +1,5 @@
 set number relativenumber
+set scrolloff=999
 
 "Mappings
 inoremap jj <Esc>

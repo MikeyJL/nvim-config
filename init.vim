@@ -1,5 +1,6 @@
 set number relativenumber
 set scrolloff=999
+set nohlsearch
 
 "Mappings
 inoremap jj <Esc>

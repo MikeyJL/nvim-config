@@ -28,4 +28,7 @@ lspconfig.tsserver.setup {
 }
 lspconfig.pyright.setup{}
 lspconfig.graphql.setup{}
+lspconfig.theme_check.setup{
+  cmd = { "theme-check-liquid-server" }
+}
 EOL

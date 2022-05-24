@@ -31,4 +31,5 @@ lspconfig.graphql.setup{}
 lspconfig.theme_check.setup{
   cmd = { "theme-check-liquid-server" }
 }
+lspconfig.tailwindcss.setup{}
 EOL

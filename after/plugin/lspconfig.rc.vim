@@ -30,20 +30,15 @@ local on_attach = function(client, bufnr)
   buf_set_keymap("n", '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
-lspconfig.dockerls.setup{}
-lspconfig.eslint.setup{}
-lspconfig.graphql.setup{}
-lspconfig.jsonls.setup{}
-lspconfig.pyright.setup{}
-lspconfig.sourcekit.setup{}
-lspconfig.tailwindcss.setup{}
-lspconfig.theme_check.setup{
-  cmd = { "theme-check-liquid-server" }
-}
-lspconfig.tsserver.setup {
-  on_attach = on_attach,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" }
-}
-lspconfig.volar.setup{}
-lspconfig.zk.setup{}
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
+-- Enable some language servers with the additional completion capabilities offered by nvim-cmp
+local servers = { 'dockerls', 'eslint', 'graphql', 'jsonls', 'pyright', 'sourcekit', 'tailwindcss', 'theme_check', 'tsserver', 'volar', 'zk' }
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+end
 EOL

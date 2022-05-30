@@ -26,12 +26,22 @@ Plug 'akinsho/toggleterm.nvim'
 Plug 'rrethy/vim-illuminate'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'pwntester/octo.nvim'
 Plug 'ggandor/lightspeed.nvim'
 Plug 'numToStr/Comment.nvim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
+
+"Completion
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+"Snippets
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
 
 "Git
 Plug 'airblade/vim-gitgutter'

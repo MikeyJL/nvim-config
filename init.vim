@@ -1,6 +1,7 @@
 set number relativenumber
 set scrolloff=999
 set nohlsearch
+set completeopt=menu,menuone,noselect
 
 "Mappings
 inoremap jj <Esc>

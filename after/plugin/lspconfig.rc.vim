@@ -3,6 +3,8 @@ if !exists("g:lspconfig")
 endif
 
 lua << EOL
+require("nvim-lsp-installer").setup {}
+
 local lspconfig = require("lspconfig")
 local protocol = require("vim.lsp.protocol")
 
@@ -28,14 +30,20 @@ local on_attach = function(client, bufnr)
   buf_set_keymap("n", '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
+lspconfig.dockerls.setup{}
+lspconfig.eslint.setup{}
+lspconfig.graphql.setup{}
+lspconfig.jsonls.setup{}
+lspconfig.pyright.setup{}
+lspconfig.sourcekit.setup{}
+lspconfig.tailwindcss.setup{}
+lspconfig.theme_check.setup{
+  cmd = { "theme-check-liquid-server" }
+}
 lspconfig.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" }
 }
-lspconfig.pyright.setup{}
-lspconfig.graphql.setup{}
-lspconfig.theme_check.setup{
-  cmd = { "theme-check-liquid-server" }
-}
-lspconfig.tailwindcss.setup{}
+lspconfig.volar.setup{}
+lspconfig.zk.setup{}
 EOL

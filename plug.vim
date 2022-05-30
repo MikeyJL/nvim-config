@@ -38,6 +38,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'rhysd/conflict-marker.vim'
 
 "LSP
+Plug 'williamboman/nvim-lsp-installer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}

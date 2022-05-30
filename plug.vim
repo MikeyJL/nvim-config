@@ -36,7 +36,7 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 
 "Git
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
+Plug 'rhysd/conflict-marker.vim'
 
 "LSP
 Plug 'neovim/nvim-lspconfig'

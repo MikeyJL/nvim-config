@@ -34,7 +34,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = { 'dockerls', 'eslint', 'graphql', 'jsonls', 'pyright', 'sourcekit', 'tailwindcss', 'theme_check', 'tsserver', 'volar', 'zk' }
+local servers = { 'dockerls', 'eslint', 'graphql', 'jsonls', 'lemminx', 'pyright', 'sourcekit', 'tailwindcss', 'theme_check', 'tsserver', 'volar', 'zk' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,

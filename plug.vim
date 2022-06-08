@@ -31,6 +31,7 @@ Plug 'ggandor/lightspeed.nvim'
 Plug 'numToStr/Comment.nvim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
+Plug 'folke/todo-comments.nvim'
 
 "Completion
 Plug 'hrsh7th/cmp-nvim-lsp'

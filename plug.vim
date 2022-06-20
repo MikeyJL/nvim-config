@@ -26,7 +26,6 @@ Plug 'akinsho/toggleterm.nvim'
 Plug 'rrethy/vim-illuminate'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'pwntester/octo.nvim'
 Plug 'ggandor/lightspeed.nvim'
 Plug 'numToStr/Comment.nvim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }

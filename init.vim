@@ -48,11 +48,8 @@ highlight ConflictMarkerCommonAncestorsHunk guibg=#754a81
 "Explorer
 "-------------------------------------------------------
 
-"Use nord theme for CHADtree
-let g:chadtree_settings = { 'theme.text_colour_set': 'nord' }
-
 "Mapping
-nnoremap <leader>v <cmd>CHADopen<cr>
+nnoremap <leader>v <cmd>NvimTreeToggle<cr>
 
 "-------------------------------------------------------
 "Dashboard

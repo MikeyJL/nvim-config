@@ -49,7 +49,7 @@ highlight ConflictMarkerCommonAncestorsHunk guibg=#754a81
 "-------------------------------------------------------
 
 "Mapping
-nnoremap <leader>v <cmd>NvimTreeToggle<cr>
+nnoremap <leader>v <cmd>NvimTreeFindFileToggle<cr>
 
 "-------------------------------------------------------
 "Dashboard

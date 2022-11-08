@@ -5,7 +5,7 @@ endif
 call plug#begin()
 
 "Appearance
-Plug 'vim-airline/vim-airline'
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'

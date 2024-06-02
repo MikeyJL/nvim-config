@@ -25,11 +25,18 @@ return {
 			defaults = {
 				path_display = { "smart" },
 				mappings = {
-					i = {
-						["<C-k>"] = actions.move_selection_previous,
-						["<C-j>"] = actions.move_selection_next,
-						["<C-q>"] = actions.send_selected_to_qflist + custom_actions.open_trouble_qflist,
-						["<C-t>"] = trouble_telescope.smart_open_with_trouble,
+					n = {
+						["<c-q>"] = actions.send_selected_to_qflist + custom_actions.open_trouble_qflist,
+						["<c-t>"] = trouble_telescope.smart_open_with_trouble,
+					},
+				},
+			},
+			pickers = {
+				buffers = {
+					mappings = {
+						n = {
+							["<c-d>"] = actions.delete_buffer + actions.move_to_top,
+						},
 					},
 				},
 			},

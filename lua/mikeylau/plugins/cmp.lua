@@ -26,9 +26,8 @@ return {
 			}),
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp", priority = 3 },
-				{ name = "nvim_buffer", priority = 2 },
+				{ name = "buffer", priority = 2 },
 				{ name = "path", priority = 1 },
-				{ name = "snippet", priority = 0 },
 			}),
 			formatting = {
 				format = lspkind.cmp_format({

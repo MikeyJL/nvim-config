@@ -3,6 +3,7 @@ return {
 	event = "InsertEnter",
 	dependencies = {
 		"hrsh7th/cmp-path",
+		"hrsh7th/cmp-buffer",
 		"onsails/lspkind.nvim",
 	},
 	config = function()
@@ -24,8 +25,10 @@ return {
 				["<CR>"] = cmp.mapping.confirm({ select = false }),
 			}),
 			sources = cmp.config.sources({
-				{ name = "nvim_lsp" },
-				{ name = "path" },
+				{ name = "nvim_lsp", priority = 3 },
+				{ name = "nvim_buffer", priority = 2 },
+				{ name = "path", priority = 1 },
+				{ name = "snippet", priority = 0 },
 			}),
 			formatting = {
 				format = lspkind.cmp_format({
